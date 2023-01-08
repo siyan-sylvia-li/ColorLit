@@ -1,0 +1,14 @@
+{
+  "red": ["cardinal", "coral", "crimson", "flaming", "maroon", "burgundy", "fuchsia",
+    "scarlet"],
+  "green": ["emerald", "olive", "aquamarine", "beryl", "jade", "lime"],
+  "black": ["ebony", "jet", "obsidian", "onyx", "inky"],
+  "white": ["alabaster", "ashen", "blanched", "bleached", "cadaverous", "doughy", "pale", "pallid", "pasty",
+    "ivory", "pearly", "beige"],
+  "blue": ["azure", "indigo", "sapphire", "cerulean", "cobalt", "turquoise", "teal"],
+  "brown": ["amber", "hazel", "khaki", "tan", "umber"],
+  "gray": ["grey"],
+  "yellow": [],
+  "pink": ["rosy", "blush", "magenta"],
+  "purple": ["lavender", "lilac", "mauve", "periwinkle", "plum", "violet", "amethyst"]
+}
