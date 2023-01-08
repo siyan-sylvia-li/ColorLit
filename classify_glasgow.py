@@ -35,7 +35,7 @@ def find_imag(word):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--glasgow_label", type=str)
-    parser.add_argument("--input_file", type=str, default="author_color_dict.json")
+    parser.add_argument("--input_file", type=str, default="final_data/author_color_dict.json")
     args = parser.parse_args()
     FT_DIM = 100
     GLASGOW_LABEL = args.glasgow_label
@@ -44,10 +44,10 @@ if __name__ == "__main__":
     ft = fasttext.load_model('cc.en.300.bin')
     fasttext.util.reduce_model(ft, FT_DIM)
     glasgow_dict = {}
-    glasgow_df = pandas.read_csv("glasgow.csv")
+    glasgow_df = pandas.read_csv("glasgow_models/glasgow.csv")
     build_img_dict(glasgow_df)
     img_model = torch.load("glasgow_models/models/best_loss_{}_model.pt".format(GLASGOW_LABEL))
-    acd = json.load(open('author_color_dict.json'))
+    acd = json.load(open(args.input_file))
     aimg_dict = {}
     for a in tqdm.tqdm(acd):
         aimg_dict.update({a: {}})

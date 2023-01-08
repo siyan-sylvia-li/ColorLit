@@ -14,7 +14,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
     GLASGOW_LABEL = args.glasgow_label
 
-    im_df = pandas.read_csv("{}_author_means.csv".format(GLASGOW_LABEL), index_col=[0])
+    im_df = pandas.read_csv("final_data/{}_author_means.csv".format(GLASGOW_LABEL), index_col=[0])
     # years = list(im_df['Year'])
     years = list(im_df.index)
     years = [int((x.split("_"))[1]) for x in years]

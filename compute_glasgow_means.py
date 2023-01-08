@@ -8,7 +8,7 @@ if __name__ == "__main__":
         Change this to IMAG or CNC or VAL
     """
     GLASGOW_LABEL = "VAL"
-    aimg_dict = json.load(open("author_{}_dict.json".format(GLASGOW_LABEL)))
+    aimg_dict = json.load(open("final_data/author_{}_dict.json".format(GLASGOW_LABEL)))
 
     for a in aimg_dict:
         color_line = []
